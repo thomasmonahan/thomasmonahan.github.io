@@ -23,11 +23,11 @@ repository               : "thomasmonahan/thomasmonahan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "Headshot.png"
+  name             : "Thomas Monahan"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  location         : "Oxford, UK"
   employer         : "University of Oxford"
   uri              : # URL
   email            : "thomas.monahan@eng.ox.ac.uk" 
