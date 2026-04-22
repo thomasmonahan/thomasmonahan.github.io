@@ -23,7 +23,7 @@ on prediction, attribution, and uncertainty quantification.
 I lead a research programme funded by a £211k Agile Initiative grant, working
 with the Environment Agency, the National Oceanography Centre, and the Met
 Office to operationalize my tool [RTide](https://github.com/thomasmonahan) for
-storm surge forecasting in the UK. RTide has replaced the operational surge
+storm surge forecasting in the UK. RTide is also being integrated into the operational surge
 forecasting system in the Netherlands and is being implemented at the Thames
 Barrier, protecting over £400 billion in assets and 1.5 million people.
 
@@ -54,7 +54,7 @@ Prospective students & collaborators
 
 I am always keen to hear from motivated students and researchers interested in
 working at the intersection of ocean/coastal physics, Earth observation, and
-machine learning. I currently supervise a team of eight researchers — a
+machine learning. Through my fellowship I am allowed to supervise DPhil and MSc students, especially those attached to CDTs. I currently supervise a team of eight researchers — a
 postdoctoral researcher, four doctoral students (three through the Intelligent
 Earth CDT), an MSc student, a 4th-year project student, and an undergraduate
 intern.
@@ -65,13 +65,7 @@ altimetry, storm surge and tidal dynamics, or coastal flood forecasting, I
 encourage you to look at the
 [Intelligent Earth CDT](https://www.ox.ac.uk/admissions/graduate/courses/intelligent-earth)
 and other DPhil routes through the Department of Engineering Science, and to
-get in touch by email with a brief description of your background and research
-interests.
-
-**Prospective postdocs:** I am open to supporting applications for independent
-fellowships (e.g. Schmidt AI in Science, Royal Society, NERC, Marie
-Skłodowska-Curie). Please reach out with a CV and a short description of the
-research you would like to pursue.
+get in touch by email with a brief description of your background and research interests.
 
 **MSc / 4th-year project students at Oxford:** Please get in touch if you would
 like to discuss project ideas.
