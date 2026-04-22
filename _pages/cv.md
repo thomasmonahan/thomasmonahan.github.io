@@ -9,9 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-*A PDF version of my CV is available [here](/files/Monahan_CV.pdf) (drop a file
-with this name into `/files/` to enable the link).*
-
 Current positions
 ======
 - **Schmidt AI in Science Postdoctoral Fellow**, University of Oxford (2025–present)
