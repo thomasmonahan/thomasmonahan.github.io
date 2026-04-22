@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 <p>
-  Recorded talks, interviews, and outreach videos. To add a video, edit
+  Recorded talks, interviews, and outreach videos. To add more videos, edit
   <code>_data/videos.yml</code>.
 </p>
 
@@ -36,7 +36,8 @@ author_profile: true
   .video-card .video-embed iframe,
   .video-card .video-embed img {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border: 0;
@@ -57,9 +58,10 @@ author_profile: true
   }
 </style>
 
-{% assign videos = site.data.videos.videos | sort: "date" | reverse %}
+{% assign videos = site.data.videos.videos | default: empty %}
 
-{% if videos and videos.size > 0 %}
+{% if videos.size > 0 %}
+  {% assign videos = videos | sort: "date" | reverse %}
   <div class="video-list">
     {% for v in videos %}
       <div class="video-card">
@@ -82,6 +84,7 @@ author_profile: true
             </a>
           {% endif %}
         </div>
+
         <h3>
           {% if v.url and v.youtube_id == nil and v.vimeo_id == nil %}
             <a href="{{ v.url }}">{{ v.title }}</a>
@@ -89,11 +92,29 @@ author_profile: true
             {{ v.title }}
           {% endif %}
         </h3>
-        {% if v.date %}<p class="video-date">{{ v.date | date: "%B %Y" }}</p>{% endif %}
-        {% if v.description %}<p class="video-desc">{{ v.description }}</p>{% endif %}
+
+        {% if v.date %}
+          <p class="video-date">{{ v.date | date: "%B %Y" }}</p>
+        {% endif %}
+
+        {% if v.description %}
+          <p class="video-desc">{{ v.description }}</p>
+        {% endif %}
       </div>
     {% endfor %}
   </div>
 {% else %}
-  <p><em>No videos yet. Add entries to <code>_data/videos.yml</code> to populate this page.</em></p>
+  <div class="video-list">
+    <div class="video-card">
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/q5Uce17Wxos"
+          title="YouTube video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <h3>YouTube video</h3>
+      <p class="video-desc">Recorded talk or video.</p>
+    </div>
+  </div>
 {% endif %}
