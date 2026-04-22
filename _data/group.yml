@@ -19,7 +19,7 @@
 pi:
   - name: "Dr. Thomas Monahan"
     role: "Schmidt AI in Science Fellow, Senior Research Associate, New College JRF"
-    photo: "thomas_monahan.jpg"
+    photo: "thomas_monahan.png"
     bio: "Thomas leads the group's research on physics-informed and probabilistic machine learning for ocean and coastal processes, including storm surge forecasting, tidal dynamics, and satellite altimetry."
     email: "thomas.monahan@eng.ox.ac.uk"
     website: "https://thomasmonahan.github.io"
