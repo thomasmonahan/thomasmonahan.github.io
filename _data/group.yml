@@ -1,0 +1,83 @@
+# Group members.
+#
+# Add/edit entries below to populate the Group page. Each entry may include:
+#   name        - Full name (required)
+#   role        - Position / title (e.g. "Postdoctoral Researcher")
+#   photo       - Filename of image in /images/group/ (e.g. "jane_doe.jpg")
+#                 If omitted, a placeholder is shown.
+#   bio         - Short description (1-3 sentences)
+#   email       - Optional contact email
+#   website     - Optional personal / institutional website URL
+#   github      - Optional GitHub username
+#   scholar     - Optional Google Scholar URL
+#   orcid       - Optional ORCID URL
+#   linkedin    - Optional LinkedIn URL
+#
+# Members are grouped into sections below. Add more members to any section by
+# copying an existing block and editing the fields.
+
+pi:
+  - name: "Dr. Thomas Monahan"
+    role: "Schmidt AI in Science Fellow, Senior Research Associate, New College JRF"
+    photo: "thomas_monahan.jpg"
+    bio: "Thomas leads the group's research on physics-informed and probabilistic machine learning for ocean and coastal processes, including storm surge forecasting, tidal dynamics, and satellite altimetry."
+    email: "thomas.monahan@eng.ox.ac.uk"
+    website: "https://thomasmonahan.github.io"
+    scholar: "https://scholar.google.com/citations?user=W4-m6_8AAAAJ&hl=en"
+    orcid: "https://orcid.org/0000-0003-3889-5551"
+    github: "thomasmonahan"
+
+postdocs:
+  - name: "Postdoctoral Researcher"
+    role: "PDRA — RTide / Thames Estuary flood resilience"
+    photo:
+    bio: "Working on the operationalization of RTide for storm-surge forecasting in the UK, in collaboration with the Environment Agency, National Oceanography Centre, and Met Office."
+    email:
+    website:
+
+doctoral_students:
+  - name: "Yiming Cao"
+    role: "DPhil Student"
+    photo:
+    bio: "Works on skew-surge joint return period estimates and flood-risk quantification."
+    email:
+
+  - name: "Victoria Martin"
+    role: "DPhil Student"
+    photo:
+    bio: "Studies the fluvial contribution to flooding in the Thames Estuary."
+    email:
+
+  - name: "Jabu Thlomole"
+    role: "DPhil Student (IECDT)"
+    photo:
+    bio: "Evaluates RTide post-processing for operational storm surge forecasting around the UK."
+    email:
+
+  - name: "Vivaan Nerkar"
+    role: "DPhil Student (IECDT)"
+    photo:
+    bio: "Develops fast probabilistic symbolic regression with variational Bayes."
+    email:
+
+msc_students:
+  - name: "MSc Student"
+    role: "MSc Research Project"
+    photo:
+    bio: "Short description of project."
+    email:
+
+project_students:
+  - name: "4th-Year Project Student"
+    role: "MEng Final-Year Project"
+    photo:
+    bio: "Short description of project."
+    email:
+
+  - name: "Undergraduate Intern"
+    role: "Summer Research Intern"
+    photo:
+    bio: "Short description of project."
+    email:
+
+alumni: []

@@ -1,0 +1,118 @@
+---
+layout: archive
+title: "Research Group"
+permalink: /group/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>
+  Our group works at the intersection of ocean and coastal physics, satellite
+  and in-situ Earth observation, and probabilistic machine learning. We develop
+  methods that are scientifically informative, operationally useful, and
+  directly applicable as geophysical corrections for Earth-observation
+  missions.
+</p>
+
+<style>
+  .group-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5em;
+    margin: 1em 0 2em 0;
+  }
+  .group-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1em;
+    text-align: center;
+    background: #fafafa;
+  }
+  .group-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 0.6em auto;
+    display: block;
+    background: #eee;
+  }
+  .group-card .group-name {
+    font-weight: bold;
+    font-size: 1.05em;
+    margin: 0.2em 0;
+  }
+  .group-card .group-role {
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
+  }
+  .group-card .group-bio {
+    font-size: 0.85em;
+    color: #333;
+    text-align: left;
+  }
+  .group-card .group-links {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+  }
+  .group-card .group-links a {
+    margin: 0 0.25em;
+  }
+  .group-section-title {
+    margin-top: 1.5em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2em;
+  }
+</style>
+
+{% assign sections = "pi,postdocs,doctoral_students,msc_students,project_students,alumni" | split: "," %}
+{% assign section_titles = "Principal Investigator,Postdoctoral Researchers,Doctoral Students,MSc Students,Project Students & Interns,Alumni" | split: "," %}
+
+{% for section in sections %}
+  {% assign idx = forloop.index0 %}
+  {% assign members = site.data.group[section] %}
+  {% if members and members.size > 0 %}
+    <h2 class="group-section-title">{{ section_titles[idx] }}</h2>
+    <div class="group-grid">
+      {% for m in members %}
+        <div class="group-card">
+          {% if m.photo and m.photo != "" %}
+            <img src="{{ base_path }}/images/group/{{ m.photo }}" alt="{{ m.name }}">
+          {% else %}
+            <img src="{{ base_path }}/images/500x300.png" alt="{{ m.name }}">
+          {% endif %}
+          <div class="group-name">{{ m.name }}</div>
+          {% if m.role %}<div class="group-role">{{ m.role }}</div>{% endif %}
+          {% if m.bio %}<div class="group-bio">{{ m.bio }}</div>{% endif %}
+          <div class="group-links">
+            {% if m.email %}<a href="mailto:{{ m.email }}" title="Email"><i class="fas fa-envelope"></i></a>{% endif %}
+            {% if m.website %}<a href="{{ m.website }}" title="Website"><i class="fas fa-globe"></i></a>{% endif %}
+            {% if m.github %}<a href="https://github.com/{{ m.github }}" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}
+            {% if m.scholar %}<a href="{{ m.scholar }}" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
+            {% if m.orcid %}<a href="{{ m.orcid }}" title="ORCID"><i class="fab fa-orcid"></i></a>{% endif %}
+            {% if m.linkedin %}<a href="{{ m.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<h2 class="group-section-title">Join the group</h2>
+
+<p>
+  We are always keen to hear from motivated students and researchers. See the
+  <a href="{{ base_path }}/">About page</a> for information on prospective
+  DPhil, postdoc, MSc, and project opportunities, or email
+  <a href="mailto:thomas.monahan@eng.ox.ac.uk">thomas.monahan@eng.ox.ac.uk</a>.
+</p>
+
+<p style="font-size: 0.85em; color: #666;">
+  <em>To add a photo for a member: drop the file into <code>/images/group/</code>
+  (e.g. <code>jane_doe.jpg</code>) and set the <code>photo</code> field for
+  that member in <code>_data/group.yml</code> to match the filename.</em>
+</p>

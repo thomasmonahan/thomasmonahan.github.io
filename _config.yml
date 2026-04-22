@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Thomas Monahan"
 title_separator          : "-"
 name                     : &name "Thomas Monahan"
-description              : &description "Thomas Monahan's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Dr. Thomas Monahan — Schmidt AI in Science Fellow, Senior Research Associate, and New College JRF at the University of Oxford. Probabilistic and physics-informed machine learning for ocean and coastal processes."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://thomasmonahan.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "Headshot.png"
   name             : "Thomas Monahan"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Schmidt AI in Science Fellow & Senior Research Associate at the University of Oxford. Probabilistic & physics-informed ML for ocean and coastal processes."
   location         : "Oxford, UK"
   employer         : "University of Oxford"
   uri              : # URL
@@ -84,10 +84,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
+  published:
+    title: 'Published'
+  under_review:
+    title: 'Under Review'
+  in_preparation:
+    title: 'In Preparation'
   conferences:
     title: 'Conference Papers'
 

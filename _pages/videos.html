@@ -1,0 +1,99 @@
+---
+layout: archive
+title: "Videos"
+permalink: /videos/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>
+  Recorded talks, interviews, and outreach videos. To add a video, edit
+  <code>_data/videos.yml</code>.
+</p>
+
+<style>
+  .video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+  .video-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1em;
+    background: #fafafa;
+  }
+  .video-card .video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #000;
+  }
+  .video-card .video-embed iframe,
+  .video-card .video-embed img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+  }
+  .video-card h3 {
+    margin: 0.6em 0 0.2em 0;
+    font-size: 1.05em;
+  }
+  .video-card .video-date {
+    color: #666;
+    font-size: 0.85em;
+    margin: 0 0 0.4em 0;
+  }
+  .video-card p.video-desc {
+    margin: 0.2em 0 0 0;
+    font-size: 0.9em;
+  }
+</style>
+
+{% assign videos = site.data.videos.videos | sort: "date" | reverse %}
+
+{% if videos and videos.size > 0 %}
+  <div class="video-list">
+    {% for v in videos %}
+      <div class="video-card">
+        <div class="video-embed">
+          {% if v.youtube_id %}
+            <iframe
+              src="https://www.youtube.com/embed/{{ v.youtube_id }}"
+              title="{{ v.title }}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          {% elsif v.vimeo_id %}
+            <iframe
+              src="https://player.vimeo.com/video/{{ v.vimeo_id }}"
+              title="{{ v.title }}"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen></iframe>
+          {% elsif v.url %}
+            <a href="{{ v.url }}">
+              <img src="{{ base_path }}/images/{{ v.thumbnail | default: '500x300.png' }}" alt="{{ v.title }}">
+            </a>
+          {% endif %}
+        </div>
+        <h3>
+          {% if v.url and v.youtube_id == nil and v.vimeo_id == nil %}
+            <a href="{{ v.url }}">{{ v.title }}</a>
+          {% else %}
+            {{ v.title }}
+          {% endif %}
+        </h3>
+        {% if v.date %}<p class="video-date">{{ v.date | date: "%B %Y" }}</p>{% endif %}
+        {% if v.description %}<p class="video-desc">{{ v.description }}</p>{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p><em>No videos yet. Add entries to <code>_data/videos.yml</code> to populate this page.</em></p>
+{% endif %}

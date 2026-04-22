@@ -1,0 +1,27 @@
+# Videos to display on the Videos page.
+#
+# Add entries below. Each entry supports:
+#   title       - Video title (required)
+#   description - Short description shown below the embed
+#   date        - ISO date (YYYY-MM-DD) used to sort, newest first
+#   youtube_id  - YouTube video ID (the part after "v=" in the URL)
+#   vimeo_id    - Vimeo video ID (alternative to youtube_id)
+#   url         - Fallback: any external URL (will be shown as a link only)
+#   thumbnail   - Optional: image filename under /images/ (only used with `url`)
+#
+# Ordering: by `date` field, descending. If no date is given the entry is
+# still displayed but will sort to the bottom.
+
+videos:
+  # Example entries - edit or remove these when you add real ones.
+  #
+  # - title: "The seiche that shook the world - Veritasium interview"
+  #   description: "Interview about our Nature Communications paper."
+  #   date: 2025-06-15
+  #   youtube_id: "dQw4w9WgXcQ"
+  #
+  # - title: "Global operational storm surge forecasting using deep learning"
+  #   description: "Invited talk at the Alan Turing Institute."
+  #   date: 2025-06-01
+  #   url: "https://www.turing.ac.uk/events/example"
+  #   thumbnail: "500x300.png"
