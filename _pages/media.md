@@ -26,7 +26,7 @@ news outlets, with personal interviews in:
 - New York Post
 - Veritasium
 
-The associated [*Nature Communications* paper](https://www.nature.com/articles/s41467-025-60089-6)
+The associated [*Nature Communications* paper](https://www.nature.com/articles/s41467-025-59851-7)
 has been downloaded over 60,000 times.
 
 *Add direct links to articles and interviews below as you like.*
@@ -49,9 +49,9 @@ Public outreach
 Impact highlights
 ======
 
-- **RTide replaced the operational surge forecasting system in the Netherlands**,
+- **RTide is being implemented the operational surge forecasting system in the Netherlands**,
   used in operations of the largest coastal flood defence system in the world.
-- **RTide is being implemented at the Thames Barrier, London**, protecting
+- **RTide is being implemented at the Thames Barrier, London and in the broader UK Surge forecasting network**, helping protect
   >£400 billion in assets and 1.5 million people.
 - Open-source Python packages: [RTide](https://github.com/thomasmonahan),
   [VTide](https://github.com/thomasmonahan).
