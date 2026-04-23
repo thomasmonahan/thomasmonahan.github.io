@@ -23,7 +23,7 @@ repository               : "thomasmonahan/thomasmonahan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.PNG"
+  avatar           : "profile.PNG"
   name             : "Thomas Monahan"
   pronouns         : # example: "she/her"  
   bio              : "Schmidt AI in Science Fellow & Senior Research Associate at the University of Oxford. Probabilistic & physics-informed ML for ocean and coastal processes."
