@@ -18,7 +18,7 @@ dynamical theory, and interpretable probabilistic machine learning to build
 models that are scientifically informative, operationally useful, and directly
 applicable as geophysical corrections for Earth-observation missions. My work
 spans processes from coastal flooding to large-scale circulation, with a focus
-on prediction, attribution, and uncertainty quantification.
+on prediction, attribution, and uncertainty quantification. 
 
 I lead a research programme funded by a £211k Agile Initiative grant, working
 with the Environment Agency, the National Oceanography Centre, and the Met
